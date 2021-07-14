@@ -1,0 +1,29 @@
+.videoControlls {
+  width: 90px;
+  height: 90px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  cursor: pointer;
+}
+.videoControlls > p {
+  text-align: center;
+  position: relative;
+  font-size: 0.8vw;
+}
+
+.videoControlls .octagon {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.videoControllsContainer {
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+  position: absolute;
+  justify-content: space-around;
+  left: 15%;
+  top: 80%;
+}

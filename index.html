@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/foldableText.css" />
+    <link rel="stylesheet" href="/css/videoControlls.css" />
+    <title>Team 6 EMS</title>
+    <script src="/js/lib/jquery-3.6.0.min.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/modul/drag&drop.js"></script>
+    <link rel="stylesheet" href="https://use.typekit.net/fcj8gaf.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/fcj8gaf.css">
+    <script src="/js/modul/foldableTexts.js"></script>
+    <script src="/js/modul/videoControlls.js"></script>
+    <script src="/js/modul/dualCircleSwitch.js"></script>
+  </head>
+  <body>
+    <section id="explanationOverlay" class="explanation showFlex">
+
+      <div id="navExplanation" class="explanation textExplanation hide ">
+        <h3>Ziehen Sie die Kreise von rechts auf das Display.</br>Probieren Sie unterschiedliche Kombinationen aus.</h3>
+      </div>
+      <div id="teamExplanation" class="explanation textExplanation showFlex">
+        <h3>Herzlich Willkommen zu unserer erlebbaren Management Summary.</h3>
+      </div>
+      <div id="trailerExplanation" class="explanation textExplanation hide">
+        <h3>Spielen Sie jederzeit das Produktvideo ab.</h3>
+      </div>
+      <div class="explanation textExplanation showFlex" id="tutorialButton">
+        <div id="buttonDiv">
+          <button id="skip">Überspringen</button>
+          <button id="tutorial">Weiter</button>
+        </div>
+      </div>
+    </section>
+    
+    <div class="tableWrapper">
+      <section id="table">
+        <section id="team" class="show fullScale">
+          <div id="teamBox">
+            <div id="lynn" class="teamMember"><h2 >Lynn Dunkel</h2></div>
+            <div id="leander" class="teamMember"><h2 >Leander Schmidt</h2></div>
+            <div id="marie" class="teamMember"><h2 >Marie Backhaus</h2></div>
+          </div>
+        </section>
+        <section id="student" class="hide fullScale">
+          <div class="textContainer" id="student_text">
+            <div class="textBox">
+              <div id="textBoxBackground">
+                <h1>Die Schüler*Innensicht</h1>
+                <p>
+                  Der Mensch schafft Analogien und
+                  Repräsentationen zwischen schon bekannten Dingen, um sich
+                  unbekannte Dinge vorstellen zu können. Gerade bei der
+                  Übertragung von Informationen in das Langzeitgedächtnis hilft
+                  es daher, wenn die Informationen auch in haptischer Form
+                  begreifbar sind. <br /><br />In der Schule gibt es Fächer, wie
+                  z.B. die Biologie, in denen gewisse Prozesse und Strukturen
+                  nicht im realen Umfeld betrachtet werden können. Um diese zu
+                  verstehen, muss daher viel mit Bildern und Analogien
+                  gearbeitet werden. Dies funktioniert allerdings nicht immer
+                  bei jedem Schüler*Inn, da jeder Mensch andere interne
+                  Repräsentationen von den gleichen Dingen besitzen kann.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="teacher" class="hide fullScale">
+          <div class="textContainer" id="teacher_text">
+            <div class="textBox">
+              <div id="textBoxBackground">
+                <h1>Die Lehrendensicht</h1>
+                <p>
+                  Die Lehrenden besitzen die Motivation, ihre Schüler*Innen zu
+                  fördern. Dafür bereiten sie einen interessanten Unterricht
+                  vor, um die Schüler*Innen abzuholen. Dass heißt in der Vorbereitung
+                  müssen sie das Material und den Stoff filtern und auf die
+                  Bedürfnisse der Klasse anpassen. Im Unterricht selbst bereiten
+                  sie die Themen auf oder geben den Schüler*Innen die Möglichkeit,
+                  neue Zusammenhänge zu erkunden. Währendessen beantworten sie
+                  Fragen oder geben Feedback zu dem Erarbeiteten.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="solution" class="hide fullScale">
+          <section id="solution_design" class="show fullScale">
+            <div class="foldableContainer Display">
+              <div
+                class="foldableButton octagon activeOpacity"
+                onclick="toggleText('Display')"
+              ></div>
+              <div
+                id="Display"
+                class="foldableTextContainer hide textContainer"
+              >
+                <div class="textBox">
+                  <div id="textBoxBackground" class ="smallerHeadlineSpace">
+                    <h1>Display</h1>
+                    <p>
+                      Maße 173mm x 97mm<br />
+                      (16x9 Format, Auflösung 1920pxx1080px)<br />
+                      Multitouch
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="foldableContainer RFIDreaderGRID">
+              <div
+                class="foldableButton octagon activeOpacity"
+                onclick="toggleText('RFIDreaderGRID')"
+              ></div>
+              <div
+                id="RFIDreaderGRID"
+                class="foldableTextContainer hide textContainer"
+              >
+                <div class="textBox">
+                  <div id="textBoxBackground" class ="smallerHeadlineSpace">
+                    <h1>RFID Reader Grid</h1>
+                    <p>
+                      HxBxT 2cmx 5cm x 5cm<br />
+                      ca. 20x37 RFID Reader, 760 messbare Positionen
+                      optional Matte aus Projekt Zanzibar
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="foldableContainer StandByButton">
+              <div
+                class="foldableButton octagon activeOpacity"
+                onclick="toggleText('StandByButton')"
+              ></div>
+              <div
+                id="StandByButton"
+                class="foldableTextContainer hide textContainer"
+              >
+                <div class="textBox">
+                  <div id="textBoxBackground" class ="smallerHeadlineSpace">
+                    <h1>Standby Button</h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="foldableContainer Computer">
+              <div
+                class="foldableButton octagon activeOpacity"
+                onclick="toggleText('Computer')"
+              ></div>
+              <div
+                id="Computer"
+                class="foldableTextContainer hide textContainer"
+              >
+                <div class="textBox">
+                  <div id="textBoxBackground" class ="smallerHeadlineSpace">
+                    <h1>Computer</h1>
+                    <p>Der Computer kann in den Standfuß integriert werden.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="foldableContainer Anschlüsse">
+              <div
+                class="foldableButton octagon activeOpacity"
+                onclick="toggleText('Anschlüsse')"
+              ></div>
+              <div
+                id="Anschlüsse"
+                class="foldableTextContainer hide textContainer"
+              >
+                <div class="textBox">
+                  <div id="textBoxBackground" class ="smallerHeadlineSpace">
+                    <h1>Anschlüsse</h1>
+                    <p>Strom und Internet können über den Boden angeschlossen werden</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section id="solution_prototyp" class="hide fullScale">
+            <div class="foldableContainer modelle">
+              <div
+                class="foldableButton octagon activeOpacity"
+                onclick="toggleText('3dModelle')"
+              ></div>
+              <div
+                id="3dModelle"
+                class="foldableTextContainer hide textContainer"
+              >
+                <div class="textBox">
+                  <div id="textBoxBackground" class ="smallerHeadlineSpace">
+                    <h1>3D Modelle</h1>
+                    <p>
+                      Unsere Modelle haben wir für unseren Prototyp 3D gedruckt. 
+                      Für den Prototypen war geplant, diese drei Modelle auch
+                      in der Simulation umzusetzen, wobei wir nur eine
+                      Verbindung zwischen zwei von diesen geschafft haben. Die einzelnen
+                      Bestandteile der Modelle sind farblich
+                      hervorgehoben, damit die Einzelteile leicht zu unterscheiden sind. Eine weitere Möglichkeit, das Wissen über den Aufbau der Modelle zu vertiefen, wäre, die Modelle von den Schüler*Innen selbst zusammenbauen zu lassen.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="foldableContainer RFID">
+              <div
+                class="foldableButton octagon activeOpacity"
+                onclick="toggleText('RFID')"
+              ></div>
+              <div
+                id="RFID"
+                class="foldableTextContainer hide textContainer"
+              >
+                <div class="textBox">
+                  <div id="textBoxBackground" class ="smallerHeadlineSpace">
+                    <h1>RFID Sensoren</h1>
+                    <p>
+                      Anhand der RFID Reader, die später unter dem Tisch montiert
+                      sein sollen, kann der Tisch erkennen, welche Modelle wo
+                      positioniert wurden. Er liest die Daten der RFID Chips
+                      an den Modellen aus. In diesen sind unter anderem der Name
+                      des Modells, die Version und das Unterrichtsfach, zu dem sie
+                      gehören, gespeichert.
+                    </p>
+                  </div>
+                </div>
+            </div>
+
+            </div>
+            <div class="foldableContainer simulation">
+              <div
+                class="foldableButton octagon activeOpacity"
+                onclick="toggleText('simulation')"
+              ></div>
+              <div
+                id="simulation"
+                class="foldableTextContainer hide textContainer"
+              >
+                <div class="textBox">
+                  <div id="textBoxBackground" class ="smallerHeadlineSpace">
+                    <h1>Simulation</h1>
+                    <p>
+                      In der Simulation sollen die Prozesse zwischen den Modellen
+                      dargestellt werden. Gesteuert wird diese über das
+                      aufstellen, entfernen, rotieren und verschieben der
+                      Objekte. In der Simulation können die Schüler*Innen frei mit den Modellen
+                      und ihrer digitalen Repräsentation experimentieren.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="foldableContainer touchDisplay">
+              <div
+                class="foldableButton octagon activeOpacity"
+                onclick="toggleText('touchDisplay')"
+              ></div>
+              <div
+                id="touchDisplay"
+                class="foldableTextContainer hide textContainer"
+              >
+                <div class="textBox">
+                  <div id="textBoxBackground" class ="smallerHeadlineSpace">
+                    <h1>Touch Display</h1>
+                    <p>
+                      Über Touch werden die Steuerelemente der Simulation bedient.
+                      In dem Fall ist nutzen wir einen Iiama ProLite T225OMTS. Dieser
+                      eignet sich allerdings nicht für eine spätere Umsetzung, da
+                      der Optical Touch die Anzahl an erkennbaren Touchpoints verringert.
+                      Bei einem geneigten Blickwinkel verfärbt sich das Display, 
+                      weshalb es sich ebenfalls nicht für unseren Anwendungsfall eignet.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </section>
+        <section id="teacher_student" class="hide fullScale">
+          <div class="textContainer" id="teacher_student_text">
+            <div class="textBox">
+              <div id="textBoxBackground">
+                <h1>Schüler*Innen und Lehrende</h1>
+                <p>
+                  Der Unterricht besteht aus der Interaktion zwischen 
+                  Lehrenden und Lernenden. Dabei kommen Medien wie Bücher, 
+                  Tafelbilder, Modelle oder Videos zum Einsatz.
+                  <br />
+                  <br />
+                  Während den Phasen eines kompetenzorientierten Unterrichts,
+                  stehen Lehrende und Schüler*Innen im engen Austausch miteinander.
+                  Gerade beim Üben wählt die Lehrperson den passenden Lernstoff
+                  für die Lernenden aus, um sie gemäß ihren Fähigkeiten zu
+                  fördern. Natürlich unterstützt sie diese auch
+                  weitergehend bei der Bearbeitung der Themen.
+                </p>
+              </div>
+            </div>
+            <div class="textBox textBoxNr2">
+              <div id="textBoxBackground">
+                <h1>Phasen des Unterrichts</h1>
+                <p>
+                  1: Das Thema kennenlernen und den Weg aufzeigen. <br />
+                  2: Das Thema zum ersten Mal bearbeiten.<br />
+                  3: Feedback zu dem Erarbeiteten bekommen.<br />
+                  4: Eine vertiefende Beschäftigung mit dem Thema.<br />
+                  5: Feedback zur gesamten Lerneinheit und des erworbenen
+                  Wissenstandes.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="student_solution" class="hide fullScale">
+          <video id="video_student_solution" class="fullScale" autoplay>
+            <source src="/assets/video/student_solution.mp4" type="video/mp4" />
+          </video>
+          <div class="videoControllsContainer">
+            <div
+              id="videoControll0"
+              class="videoControlls"
+              onclick="setCurrentMark(0)"
+            >
+              <div class="octagon activeOpacity"></div>
+              <p>Modelle und Simulation</p>
+            </div>
+            <div
+              id="videoControll1"
+              class="videoControlls"
+              onclick="setCurrentMark(1)"
+            >
+              <div class="octagon"></div>
+              <p>Modell platzieren</p>
+            </div>
+            <div
+              id="videoControll2"
+              class="videoControlls"
+              onclick="setCurrentMark(2)"
+            >
+              <div class="octagon"></div>
+              <p>Modelle kombinieren</p>
+            </div>
+          </div>
+        </section>
+        <section id="teacher_solution" class="hide fullScale">
+          <div class="textContainer" id="teacher_solution_text">
+            <div class="textBox">
+              <div id="textBoxBackground">
+                <h1>Die Lösung aus Lehrendensicht</h1>
+                <p>
+                  Aus der Sicht der Lehrenden muss ein neues Medium für den
+                  Unterricht gewisse Anforderungen erfüllen, damit es sinnvoll
+                  in den Unterrichtsablauf eingebunden werden kann.
+                  <br /><br />
+                  1. Die Lehrperson muss die Tische synchron
+                  steuern können, um am Anfang alle Schüler*Innen auf den selben Stand
+                  bringen zu können.
+                  <br /><br />
+                  2. Die Lehrperson kann verschiedene Szenarien vorgeben, in
+                  denen sich die Schüler*Innen bewegen können, um trotz der
+                  thematischen Einschränkung den Schüler*Innen gewisse Freiheiten
+                  in der Aufgabenbearbeitung geben zu können.
+                  <br /><br />
+                  3. Die Lehrperson kann die Inhalte
+                  beeinflussen. Diese werden zwar von Verlagen erstellt, 
+                  damit die Lehrperson allerdings ihren Unterricht individuell
+                  gestalten kann, muss sie Einfluss auf die dargestellten Inhalte
+                  und die Bennenung einzelner Bestandtteile haben können.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="teacher_student_solution" class="hide fullScale">
+          <div class="textContainer" id="teacher_student_solution_text">
+            <div class="textBox">
+              <div id="textBoxBackground">
+                <h1>Fazit und Beurteilung</h1>
+                <p>
+                  Das Projekt war in mehreren Punkten erfolgreich. Es sich gezeigt,
+                  dass unser Ansatz, den Unterricht haptisch
+                  erlebbarer und digitaler zu machen, funktioniert. Weiterhin konnten wir Technologien
+                  ausmachen, mit denen diese Vorstellungen umgesetzt werden
+                  können. <a href="https://www.microsoft.com/en-us/research/project/project-zanzibar/" target="blank">Projekt Zanzibar von Microsoft</a> könnte dafür in
+                  der Zukunft sehr interessant werden, da die dort entwickelte Technik mehr Möglichkeiten bietet, physische Objekte in 
+                  eine digitale Anwendung einzubauen.
+                  <br />
+                  <br />
+                  Gerade mit dieser Technik empfehlen wir, in einem Folgeprojekt
+                  mehr Fokus auf die Umsetzung der Modelle und deren konkrete
+                  Anwendungsfälle in den Simulationen zu setzen, da
+                  wir hier nur eine sehr simple Interaktion
+                  entwickelten und an diesem Punkt die Ausprägung unserer Idee weiter ausgebaut werden kann.
+                  <br />
+                  <br />
+                  Alles in allem war das Projekt für uns erfolgreich, 
+                  auch wenn an dem Produkt noch weitergearbeitet werden muss.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+    </div>
+
+    <nav id="nav">
+      <section id="teacher_modell_container" class="draggable modell_container">
+        <div
+          id="teacher_modell_circleContainer"
+          class="circleContainer hide"
+        ></div>
+        <div id="teacher_modell" class="image"></div>
+        
+      </section>
+      <section id="student_modell_container" class="draggable modell_container">
+        <div
+          id="student_modell_circleContainer"
+          class="circleContainer hide"
+        ></div>
+        <div id="student_modell" class="image"></div>
+        
+      </section>
+      <section
+        id="solution_modell_container"
+        class="draggable modell_container"
+      >
+        <div
+          id="solution_modell_circleContainer"
+          class="circleContainer hide"
+        ></div>
+        <div
+          id="solution_modell_dualCircleContainer1"
+          class="dualCircleContainer1 hide active"
+          onclick="switchSolutionUnderSection('solution_design')"
+        >
+          <p class="switchText">Design</p>
+        </div>
+        <div
+          id="solution_modell_dualCircleContainer2"
+          class="dualCircleContainer2 hide"
+          onclick="switchSolutionUnderSection('solution_prototyp')"
+        >
+          <p class="flip switchText">Prototyp</p>
+        </div>
+        <div id="solution_modell" class="image"></div>
+
+        
+        
+      </section>
+
+      <section id="produktvideo_container" class=" modell_container"><div id="produktvideo" >
+        <a href="https://vimeo.com/573921503" target="_blank"  ><img src="../assets/ui/play_button.svg" id="play_button"></a>
+      </div>
+      </section>
+      </nav>
+  </body>
+</html>

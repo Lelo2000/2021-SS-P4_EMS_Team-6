@@ -1,1 +1,5 @@
-# 2021-SS-P4_EMS_Team-6
+# Erlebbares Management Summary
+
+## P4 Sommersemester Team 6
+
+Nur die Online Version. Die richtige liegt unter

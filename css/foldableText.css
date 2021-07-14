@@ -1,0 +1,15 @@
+.foldableButton {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  /* background: rgb(255, 255, 255, 0); */
+  /* border-radius: 999999px; */
+}
+.foldableTextContainer {
+  margin-top: -6%;
+  margin-left: 5%;
+  width: 100%
+}
+.foldableContainer {
+  width: 35%;
+}
