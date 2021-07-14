@@ -454,42 +454,42 @@ document.addEventListener(
         id = "teacher_student_solution";
         switchActiveSection(id);
         table.style.backgroundImage =
-          "url(../assets/img/teacher_student_solution.png)";
+          "url(./assets/img/teacher_student_solution.png)";
       } else if (
         targetText.includes("teacher_modell") &&
         targetText.includes("student_modell")
       ) {
         id = "teacher_student";
         switchActiveSection(id);
-        table.style.backgroundImage = "url(../assets/img/teacher_student.png)";
+        table.style.backgroundImage = "url(./assets/img/teacher_student.png)";
       } else if (
         targetText.includes("solution_modell") &&
         targetText.includes("student_modell")
       ) {
         id = "student_solution";
         switchActiveSection(id);
-        table.style.backgroundImage = "url(../assets/img/student_solution.png)";
+        table.style.backgroundImage = "url(./assets/img/student_solution.png)";
       } else if (
         targetText.includes("solution_modell") &&
         targetText.includes("teacher_modell")
       ) {
         id = "teacher_solution";
         switchActiveSection(id);
-        table.style.backgroundImage = "url(../assets/img/teacher_solution.png)";
+        table.style.backgroundImage = "url(./assets/img/teacher_solution.png)";
       } else if (
         targetText.includes("teacher_modell") &&
         targetText.length === 1
       ) {
         id = "teacher";
         switchActiveSection(id);
-        table.style.backgroundImage = "url(../assets/img/teacher.png)";
+        table.style.backgroundImage = "url(./assets/img/teacher.png)";
       } else if (
         targetText.includes("student_modell") &&
         targetText.length === 1
       ) {
         id = "student";
         switchActiveSection(id);
-        table.style.backgroundImage = "url(../assets/img/student.png)";
+        table.style.backgroundImage = "url(./assets/img/student.png)";
       } else if (
         targetText.includes("solution_modell") &&
         targetText.length === 1
@@ -504,10 +504,10 @@ document.addEventListener(
         $(`#solution_modell_dualCircleContainer2`).addClass("show");
         if (currentUnderSection === "solution_design") {
           table.style.backgroundImage =
-            "url(../assets/img/solution_design.png)";
+            "url(./assets/img/solution_design.png)";
         } else if (currentUnderSection === "solution_prototyp") {
           table.style.backgroundImage =
-            "url(../assets/img/solution_prototyp.png)";
+            "url(./assets/img/solution_prototyp.png)";
         }
       } else {
         id = "team";
