@@ -7,12 +7,12 @@ function switchSolutionUnderSection(id) {
 
   switch (id) {
     case "solution_design":
-      table.style.backgroundImage = "url(../assets/img/solution_design.png)";
+      table.style.backgroundImage = "url(./assets/img/solution_design.png)";
       $("#solution_modell_dualCircleContainer1").addClass("active");
       $("#solution_modell_dualCircleContainer2").removeClass("active");
       break;
     case "solution_prototyp":
-      table.style.backgroundImage = "url(../assets/img/solution_prototyp.png)";
+      table.style.backgroundImage = "url(./assets/img/solution_prototyp.png)";
       $("#solution_modell_dualCircleContainer2").addClass("active");
       $("#solution_modell_dualCircleContainer1").removeClass("active");
       break;
